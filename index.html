@@ -6,9 +6,7 @@
 		<meta name="description" content="Web optimization portfolio page">
 		<meta name="author" content="Samuel Gaspar">
 		<title>Cameron Pittman: Portfolio</title>
-
-		<!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-		<!--    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
+		<!-- google font css style put as inline css -->
 		<style type="text/css">
 			/* cyrillic-ext */
 			@font-face {
@@ -138,11 +136,7 @@
 				src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 				unicode-range: U +0000 -00FF, U +0131, U +0152 -0153, U +02 C6, U +02 DA, U +02 DC, U +2000 -206F, U +2074, U +20 AC, U +2212, U +2215, U   +E0FF, U   +EFFD, U   +F000;
 			}
-
-		</style>
-
-		<!--    <link href="css/style.css" rel="stylesheet"> -->
-		<style type="text/css">
+			/* css/style.css content set as inline css */
 			html {
 				font-size: 100%;
 				overflow-y: scroll;
@@ -160,7 +154,6 @@
 				font-family: 'Open Sans', sans-serif;
 				color: #333;
 			}
-
 			a {
 				color: #12C;
 			}
@@ -174,7 +167,6 @@
 				color: #c00;
 				outline: 0;
 			}
-
 			b, strong {
 				font-weight: bold;
 			}
@@ -190,7 +182,6 @@
 				border: 0;
 				max-width: 100%;
 			}
-
 			body {
 				background: #fff;
 			}
@@ -198,7 +189,6 @@
 				max-width: 45em;
 				margin: 0 auto;
 			}
-
 			header {
 				padding: 0 0.5em;
 				color: #C90B0B;
@@ -216,7 +206,6 @@
 				font-size: 0.8em;
 				font-weight: normal;
 			}
-
 			.hero {
 				padding: 2em;
 				background-color: #f8f8f8;
@@ -224,7 +213,6 @@
 				border-bottom: 1px solid #ccc;
 				border-top: 1px solid #ccc;
 			}
-
 			.content {
 				padding: 1em 1em;
 			}
@@ -240,7 +228,6 @@
 				font-size: 0.9em;
 				font-style: italic;
 			}
-
 			footer {
 				padding: 0 0.5em;
 				border-top: 1px solid #ccc;
@@ -249,7 +236,6 @@
 				float: right;
 				font-style: italic;
 			}
-
 			/* Smartphones (portrait) */
 			@media only screen and (max-width: 480px) {
 				body {
@@ -261,7 +247,7 @@
 			}
 
 		</style>
-
+		<!-- print.css with print media attribute to defer loading when required -->
 		<link href="css/print.css" rel="stylesheet" media="print">
 
 		<script>
@@ -273,11 +259,11 @@
 				};
 				w[g].l = 1 * new Date();
 			})(window, 'ga');
-			// TODO: replace with your Google Analytics profile ID.
 			// Google Analytics Account profile ID added
 			ga('create', 'UA-45986765-2');
 			ga('send', 'pageview');
 		</script>
+		<!-- async set to eliminate blocking -->
 		<script async src="http://www.google-analytics.com/analytics.js" ></script>
 		<script async src="js/perfmatters.js"></script>
 	</head>
