@@ -2,7 +2,7 @@
 
 ##There are two branches of the project:
 
-1. Master branch (it holds development code with comments & production code in Production folder uglified using gulp)
+1. Master branch (it holds development code with comments & production code in "production" folder uglified using gulp)
 1. gh-pages branch (it was setup to host the uglified production version from Production folder)
 
 Production folder contains gulpfile.js that automates minification and uglification. The gh-pages branch was set up to use Github hosting functionality. The hosted minified version can be reviewed and tested in PageSpeed to comply with requirement to score above 90. 
