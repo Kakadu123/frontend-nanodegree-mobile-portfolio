@@ -1,19 +1,21 @@
 /*
-Welcome to the 60fps project! Your goal is to make Cam's Pizzeria website run
-jank-free at 60 frames per second.
+  Samuel Gaspar Comments:
 
-There are two major issues in this code that lead to sub-60fps performance. Can
-you spot and fix both?
+   Pizza resize
+  The optimalization is based on using Class selector that is more efficient.
+  Selected DOM objects are passed to an array to avoid multiple DOM traversing.
+  The sizeSwitcher function is simplified and returns ratio of pizza elements to be 
+  subsequently used in style.width attribute assignment
 
+   FrameRate optimalization
+  The getElementsByClassName is a more efficient selector.
+  The Math.sin calculations are done outside of the for loop to reduce
+  processing time as phase assumes 5 distinct values repeatedly.
+  The number of sliding pizzas when the page loads is decreased as
+  basicLeft assumes 8 distinct values and top value is based on
+  256px grid system.
 
-Built into the code, you'll find a few instances of the User Timing API
-(window.performance), which will be console.log()ing frame rate data into the
-browser console. To learn more about User Timing API, check out:
-http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
-
-Creator:
-Cameron Pittman, Udacity Course Developer
-cameron *at* udacity *dot* com
+  more details on the optimalizations in resizePizzas and changePizzaSizes code
 */
 
 // As you may have realized, this website randomly generates pizzas.
