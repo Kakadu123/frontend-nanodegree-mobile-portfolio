@@ -14,7 +14,7 @@ http://kakadu123.github.io/frontend-nanodegree-mobile-portfolio/
    Pizza resize
   optimalization is based on using Class selector that is more efficient. Selected DOM objects passed to an array to avoid multiple DOM traversing. The sizeSwitcher function is simplified and returns ratio of pizza elements that is subsequently used in style.width attribute assignment.
 
-   FrameRate optimalization
+* FrameRate optimalization
   getElementsByClassName is a more efficient selector. The Math.sin calculations is done outside of the for loop to reduce processing time as phase assumes 5 distinct values repeatedly. Number of sliding pizzas when the page loads is decreased as basicLeft assumes 8 distinct values and top value is based on 256px grid system.
 
-  More details on the optimalizations in resizePizzas and changePizzaSizes in main.js file.
+* More details on the optimalizations in resizePizzas and changePizzaSizes in main.js file.
