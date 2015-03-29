@@ -3,11 +3,14 @@
 ##There are two branches of the project:
 
 Master branch (it holds the developement code with comments)
+
 gh-pages branch (it holds the production code uglified using gulp)
 
-gh-pages branch contains gulpfile.js that automates minification and uglification. gh-pages branch was also set up to use Github hosting functionality. The hosted minified version can be reviewed and tested in PageSpeed to comply with requirement to score above 90. http://kakadu123.github.io/frontend-nanodegree-mobile-portfolio/
+gh-pages branch contains gulpfile.js that automates minification and uglification. The gh-pages branch was also set up to use Github hosting functionality. The hosted minified version can be reviewed and tested in PageSpeed to comply with requirement to score above 90. 
 
-##Main.js optimazation details:
+http://kakadu123.github.io/frontend-nanodegree-mobile-portfolio/
+
+##Main.js optimization details:
 
    Pizza resize
   optimalization based on using Class selector that is more efficient.
